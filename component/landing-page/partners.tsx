@@ -5,13 +5,16 @@ import Image from "next/image";
 export default function PartnersAndVideo() {
   // Add your logo URLs here
   const partnerLogos = [
-    { name: "Cbtportal", url: "/logo1.png" },
-    { name: "TransNet", url: "/logo2.png" },
-    { name: "Gov Anambra", url: "/logo3.png" },
-    { name: "Uni Nigeria", url: "/logo4.png" },
-    { name: "Federal Uni", url: "/logo5.png" },
-    { name: "Ibrahim Uni", url: "/logo6.png" },
-    { name: "State Uni", url: "/logo7.png" },
+    { name: "Kokomo-Games", url: "https://i.postimg.cc/BQFDDMYm/Kokomo-Games.jpg" },
+    { name: "Young-Innovators-Nigeria", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
+    { name: "Cowrywise", url: "https://i.postimg.cc/SKgzq5RL/Cowrywise.jpg" },
+    { name: "Monochrome-Travel-App", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
+    { name: "Kegow-App", url: "https://i.postimg.cc/FF8ngFmg/Kegow-App.jpg" },
+    { name: "Kokomo-Games", url: "https://i.postimg.cc/BQFDDMYm/Kokomo-Games.jpg" },
+    { name: "Young-Innovators-Nigeria", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
+    { name: "Cowrywise", url: "https://i.postimg.cc/SKgzq5RL/Cowrywise.jpg" },
+    { name: "Monochrome-Travel-App", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
+    { name: "Kegow-App", url: "https://i.postimg.cc/FF8ngFmg/Kegow-App.jpg" },
   ];
 
   return (
@@ -19,25 +22,26 @@ export default function PartnersAndVideo() {
       {/* --- Partners Sliding Section --- */}
       <div className="pt-30">
         <div className="mx-auto w-full max-w-8xl px-4 lg:px-30">
-          <h2 className="mb-12 text-center text-4xl font-bold text-black md:text-4xl">
+          <h2 className="mb-12 text-center text-2xl font-bold text-black md:text-3xl">
             Our Partners
           </h2>
         </div>
 
         {/* Infinite Slider Container */}
         <div className="group relative flex overflow-x-hidden border-y border-zinc-100 py-10">
-          <div className="animate-marquee flex whitespace-nowrap gap-16 items-center">
+          <div className="animate-marquee flex whitespace-nowrap items-center">
             {[...partnerLogos, ...partnerLogos].map((logo, index) => (
-              <div key={index} className="relative h-12 w-48 flex-shrink-0 grayscale transition-all hover:grayscale-0 cursor-pointer">
-                <Image
-                  src={logo.url}
-                  alt={logo.name}
-                  fill
-                  className="object-contain"
-                />
-                {/* Visual indicator for missing URLs */}
-                <div className="absolute inset-0 flex items-center justify-center text-[10px] text-zinc-400 opacity-20">
-                  {logo.name} URL
+              <div
+                key={index}
+                className="relative h-20 w-20 flex-shrink-0 mx-6 transition-transform duration-300 hover:scale-110 cursor-pointer"
+              >
+                <div className="h-full w-full rounded-xl border-2 border-gray-200 shadow-lg overflow-hidden bg-white hover:border-[#25D366] hover:shadow-2xl">
+                  <Image
+                    src={logo.url}
+                    alt={logo.name}
+                    fill
+                    className="object-contain rounded-xl"
+                  />
                 </div>
               </div>
             ))}
@@ -52,14 +56,14 @@ export default function PartnersAndVideo() {
             
             {/* Left Content */}
             <div className="w-full lg:w-1/2">
-              <h2 className="text-4xl font-bold leading-tight md:text-6xl">
+              <h2 className="text-3xl font-bold leading-tight md:text-5xl">
                 Our Equity-Free
                 <span className="text-[#25D366]"> Grant Beneficiaries</span>
               </h2>
               <a 
                 href="https://www.youtube.com/embed/IAdUr0foYEg?si=9HvyH8AEwWLn3iLb&amp;controls=0"
                 target="_blank"
-                className="w-full lg:w-auto mt-10 inline-flex cursor-pointer items-center justify-center rounded-lg bg-[#25D366] px-10 py-3 text-lg font-bold text-black transition-transform hover:scale-105 active:scale-95"
+                className="w-full lg:hidden lg:w-auto mt-10 inline-flex cursor-pointer items-center justify-center rounded-lg bg-[#25D366] px-10 py-3 text-sm lg:text-lg font-bold text-white transition-transform hover:scale-105 active:scale-95"
               >
                 Watch Now
               </a>

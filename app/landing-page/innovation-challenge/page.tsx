@@ -119,7 +119,7 @@ const InnovationChallengePage = () => {
                 </h3>
 
                 {/* Main Title */}
-                <h1 className="mt-6 text-4xl font-black leading-tight text-white md:text-7xl lg:text-8xl">
+                <h1 className="mt-6 text-5xl font-black leading-tight text-white md:text-7xl lg:text-8xl">
                   Startup Innovation Challenge
                   <span className="text-[#25D366]"> 2026</span>
                 </h1>
@@ -133,7 +133,7 @@ const InnovationChallengePage = () => {
 
                 {/* CTA Button */}
                 <div className="mt-12">
-                  <button className="rounded-full cursor-pointer bg-[#25D366] px-10 py-4 text-base font-bold text-white transition-transform hover:scale-105 active:scale-95">
+                  <button className="rounded-xl cursor-pointer bg-[#25D366] px-5 py-3 text-base font-bold text-white transition-transform hover:scale-105 active:scale-95">
                     Apply Now — It&apos;s Free!
                   </button>
                 </div>
@@ -365,13 +365,13 @@ const InnovationChallengePage = () => {
 
           {/* Final CTA Area */}
           <div className="mt-24 text-center">
-            <p className="mx-auto max-w-2xl text-xl font-medium leading-relaxed text-zinc-600">
+            <p className="mx-auto max-w-2xl text-lg font-medium leading-relaxed text-zinc-600">
               This is more than a competition — it&apos;s a gateway to funding,
               mentorship, visibility, and tools to build something impactful.
             </p>
 
             <div className="mt-10">
-              <button className="rounded-full cursor-pointer bg-[#25D366] px-10 py-4 text-base font-bold text-white transition-transform hover:scale-105 active:scale-95">
+              <button className="rounded-xl cursor-pointer bg-[#25D366] px-5 py-3 text-base font-bold text-white transition-transform hover:scale-105 active:scale-95">
                 Apply Now — It&apos;s Free!
               </button>
             </div>

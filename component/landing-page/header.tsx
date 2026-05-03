@@ -39,8 +39,8 @@ export default function Header() {
   ];
 
   const reportLinks = [
-    { name: "Startup Abuja Conference", href: "https://www.startupabuja.com.ng/reports/event1.pdf" },
-    { name: "Startup Abuja Event Organizer Conference", href: "https://www.startupabuja.com.ng/reports/event_organizer.pdf" },
+    { name: "Startup Conference", href: "https://www.startupabuja.com.ng/reports/event1.pdf" },
+    { name: "Startup Event Organizer Conference", href: "https://www.startupabuja.com.ng/reports/event_organizer.pdf" },
   ];
 
   const toggleMobileDropdown = (name: string) => {
@@ -278,7 +278,7 @@ export default function Header() {
           {/* Mobile About Dropdown */}
           <button
             onClick={() => toggleMobileDropdown("about")}
-            className={`flex items-center justify-between py-3 text-lg font-medium transition-colors ${
+            className={`flex items-center justify-between py-3 text-base font-medium transition-colors ${
               pathname?.startsWith('/landing-page/team') || pathname?.startsWith('/landing-page/who-we-are')
                 ? 'text-[#25D366]'
                 : 'text-white'
@@ -345,7 +345,7 @@ export default function Header() {
           {/* Mobile Reports */}
           <button
             onClick={() => toggleMobileDropdown("reports")}
-            className="flex items-center justify-between py-3 text-lg font-medium text-white"
+            className="flex items-center justify-between py-3 text-base font-medium text-white"
           >
             Reports{" "}
             <ChevronDown
@@ -366,7 +366,7 @@ export default function Header() {
           {/* Mobile Projects */}
           <button
             onClick={() => toggleMobileDropdown("projects")}
-            className="flex items-center justify-between py-3 text-lg font-medium text-white"
+            className="flex items-center justify-between py-3 text-base font-medium text-white"
           >
             Our Projects{" "}
             <ChevronDown
@@ -389,7 +389,7 @@ export default function Header() {
 
           <Link
             href="/landing-page/donate"
-            className={`py-3 text-lg font-medium transition-colors ${
+            className={`py-3 text-base font-medium transition-colors ${
               pathname === '/landing-page/donate'
                 ? 'text-[#25D366]'
                 : 'text-white'
@@ -399,7 +399,7 @@ export default function Header() {
           </Link>
           <Link
             href="/landing-page/support"
-            className={`py-3 text-lg font-medium transition-colors ${
+            className={`py-3 text-base font-medium transition-colors ${
               pathname === '/landing-page/support'
                 ? 'text-[#25D366]'
                 : 'text-white'
@@ -411,13 +411,13 @@ export default function Header() {
           <div className="h-px bg-white/10 my-4" />
           <Link
             href="/landing-page/innovation-challenge"
-            className="rounded-lg border border-white/20 px-5 py-4 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-xl border border-white/20  text-center px-5 py-4 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
           >
             Acceleration Program
           </Link>
           <Link
             href="#"
-            className="w-full rounded-lg bg-[#25D366] py-3 text-center font-bold text-black"
+            className="w-full rounded-xl bg-[#25D366] py-3 text-center font-bold text-white"
           >
             Contact Us
           </Link>

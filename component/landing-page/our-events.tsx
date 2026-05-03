@@ -97,7 +97,7 @@ export default function OurEvents() {
         {/* Header Section */}
         <div className="mb-12 flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-4xl md:text-4xl font-bold tracking-tight text-black">Our Events</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-black">Our Events</h2>
             <div className="mt-6 flex gap-3">
               <button
                 onClick={() => setActiveTab("hire")}
@@ -164,17 +164,19 @@ export default function OurEvents() {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-1 flex-col justify-center p-8 md:p-12">
+                <div className="flex flex-1 flex-col justify-center p-5 md:p-10">
                   <span className="text-xs font-bold uppercase tracking-widest text-[#25D366]">
                     {item.subtitle}
                   </span>
-                  <h3 className="mt-2 text-2xl font-bold text-black md:text-3xl">
+                  <h3 className="mt-2 text-xl font-bold text-black md:text-2xl">
                     {item.title}
                   </h3>
                   <p className="mt-4 text-zinc-600 leading-relaxed">
                     {item.description}
                   </p>
-                  <button className="cursor-pointer mt-8 w-fit rounded-lg bg-[#25D366] px-8 py-3 font-bold text-black transition-transform hover:scale-105 active:scale-95">
+                  <button
+                    className="cursor-pointer w-full lg:w-auto md:w-auto mt-8 rounded-lg bg-[#25D366] px-8 py-3 font-bold text-sm lg:text-base text-white transition-transform hover:scale-105 active:scale-95"
+                  >
                     {item.buttonText}
                   </button>
                 </div>
@@ -184,16 +186,16 @@ export default function OurEvents() {
         </div>
 
         {/* Navigation Arrows - Mobile Only */}
-        <div className="flex justify-center gap-2 md:hidden">
+        <div className="flex justify-center gap-5 md:hidden">
           <button
             onClick={() => scroll("left")}
-            className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-full bg-zinc-100 text-zinc-600 transition-colors hover:bg-[#25D366] hover:text-black"
+            className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-600 transition-colors hover:bg-[#25D366] hover:text-black"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-full bg-zinc-100 text-zinc-600 transition-colors hover:bg-[#25D366] hover:text-black"
+            className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-600 transition-colors hover:bg-[#25D366] hover:text-black"
           >
             <ChevronRight size={24} />
           </button>

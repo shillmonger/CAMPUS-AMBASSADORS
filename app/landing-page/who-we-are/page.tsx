@@ -71,8 +71,8 @@ export default function WhoWeAre() {
 <section className="relative w-full h-[60vh] lg:h-[85vh] overflow-hidden bg-zinc-900">
   {/* The Image: Now truly 100% width and height of the container */}
   <Image
-    src="https://i.postimg.cc/L6yk5wmw/4.jpg"
-    alt="Startup Abuja Conference"
+    src="https://i.postimg.cc/zvm2KdHL/hero-image.jpg"
+    alt="Campus Ambassador Community Conference"
     fill
     className="object-cover object-center"
     priority
@@ -110,7 +110,7 @@ export default function WhoWeAre() {
                 <span className="text-[#25D366]">African Founders.</span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-zinc-600">
-                Startup Abuja is a social enterprise and accelerator platform
+                Campus Ambassador Community is a social enterprise and accelerator platform
                 dedicated to empowering startups, SMEs, and emerging founders.
                 We facilitate meaningful connections, structured training,
                 mentorship, and market access to accelerate Africa's dynamic
@@ -227,9 +227,9 @@ export default function WhoWeAre() {
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
-              "https://i.postimg.cc/sgqp9WQm/1.jpg",
-              "https://i.postimg.cc/yxKR95Bt/2.jpg",
-              "https://i.postimg.cc/2SsZBfMK/3.jpg",
+              "https://i.postimg.cc/fyTW8TDd/1.jpg",
+              "https://i.postimg.cc/wB0Gh6fb/5.jpg",
+              "https://i.postimg.cc/tRf8S4Xc/4.jpg",
             ].map((img, idx) => (
               <div
                 key={idx}

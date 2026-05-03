@@ -22,7 +22,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://i.postimg.cc/TwjBgfwD/Corporate-Event.jpg"
+            src="https://i.postimg.cc/HWSLv5Kw/1.jpg"
             alt="Startup Abuja Hero Background"
             fill
             className="object-cover"
@@ -33,10 +33,10 @@ export default function Home() {
         </div>
 
         {/* Content wrapper — full height, padded */}
-        <div className="relative z-10 w-full max-w-8xl mx-auto px-4 lg:px-30 flex flex-col justify-center py-30 min-h-screen">
+        <div className="relative z-10 w-full max-w-8xl mx-auto px-4 py-10 pt-30 lg:px-30 lg:py-30 flex flex-col justify-center min-h-screen">
 
           {/* Brand name — top left, like in the image */}
-          <p className="mb-5 text-base font-extrabold tracking-[0.25em] text-white uppercase">
+          <p className="mb-5 text-sm lg:text-base font-extrabold tracking-[0.25em] text-white uppercase">
             Campus Ambassador Community
           </p>
 
@@ -45,15 +45,13 @@ export default function Home() {
 
             {/* Left: Headline + description + buttons */}
             <div className="max-w-5xl">
-              <h1 className="text-6xl font-extrabold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl">
-                Building the Future of{" "}
-                <span className="text-[#25D366]">Startups in Africa</span>
+              <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl">
+                Empowering the Next Generation of{" "}
+                <span className="text-[#25D366]">Campus Leaders Across Africa</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-300 md:text-xl">
-                A Social Enterprise & Accelerator Platform empowering startups
-                and SMEs in Africa through training, mentorship, collaboration,
-                and access to funding opportunities.
+                Join a fast-growing community of student ambassadors building careers in tech, marketing, and leadership while working with top brands.
               </p>
 
               {/* CTA Buttons */}
@@ -80,13 +78,13 @@ export default function Home() {
               </p>
               <div className="space-y-5">
                 <div>
-                  <p className="text-4xl font-extrabold text-[#25D366]">$800k+</p>
-                  <p className="mt-1 text-sm text-zinc-400">Total Amount Raised</p>
+                  <p className="text-4xl font-extrabold text-[#25D366]">125k+</p>
+                  <p className="mt-1 text-sm text-zinc-400">OVER 125k CAMPUS AMBASSADORS IN NIGERIA </p>
                 </div>
                 <div className="h-px bg-white/10" />
                 <div>
-                  <p className="text-4xl font-extrabold text-[#25D366]">500+</p>
-                  <p className="mt-1 text-sm text-zinc-400">Startups Supported</p>
+                  <p className="text-4xl font-extrabold text-[#25D366]">7+</p>
+                  <p className="mt-1 text-sm text-zinc-400">PARTNERED WITH OVER 7+ BRANDS/COMPANY</p>
                 </div>
               </div>
             </div>

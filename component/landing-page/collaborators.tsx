@@ -23,7 +23,7 @@ export default function Collaborators() {
           
           {/* Left Content Column */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl font-bold tracking-tight text-black md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-black md:text-3xl">
               Collaborators
             </h2>
             <h3 className="mt-4 text-xl font-medium text-[#25D366]">
@@ -50,7 +50,7 @@ export default function Collaborators() {
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 href="#"
-                className="cursor-pointer rounded-lg bg-[#25D366] px-5 py-4 text-center font-bold text-black transition-transform hover:scale-105 active:scale-95"
+                className="cursor-pointer rounded-lg bg-[#25D366] px-5 py-4 text-center font-bold text-white transition-transform hover:scale-105 active:scale-95"
               >
                 Partner With Us
               </Link>

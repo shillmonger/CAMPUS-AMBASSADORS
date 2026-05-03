@@ -34,15 +34,15 @@ export default function TeamPage() {
 
   const fetchTeam = async () => {
     try {
-      const response = await fetch('/api/team');
+      const response = await fetch("/api/team");
       const data = await response.json();
-      
+
       if (data.success) {
-        console.log('Team data:', data.data);
+        console.log("Team data:", data.data);
         setTeam(data.data);
       }
     } catch (error) {
-      console.error('Failed to fetch team:', error);
+      console.error("Failed to fetch team:", error);
     } finally {
       setLoading(false);
     }
@@ -55,7 +55,7 @@ export default function TeamPage() {
       <section className="relative w-full h-[60vh] lg:h-[85vh] overflow-hidden bg-zinc-900">
         {/* The Image: Now truly 100% width and height of the container */}
         <Image
-          src="https://i.postimg.cc/L6yk5wmw/4.jpg"
+          src="https://i.postimg.cc/j2KZbfR5/conference.jpg"
           alt="Startup Abuja Conference"
           fill
           className="object-cover object-center"
@@ -88,18 +88,26 @@ export default function TeamPage() {
       <main className="flex-1 py-20">
         <div className="mx-auto w-full max-w-8xl px-4 lg:px-30">
           <div className="mb-16 text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-black md:text-4xl">
+            <h1 className="text-2xl font-bold tracking-tight text-black md:text-4xl">
               Our Team
             </h1>
-            <div className="mt-4 mx-auto h-1.5 w-20 rounded-full bg-[#25D366]" />
+
+            <p className="mt-4 text-zinc-600 max-w-2xl mx-auto text-lg font-medium text-zinc-300 md:text-xl">
+              Meet the talented people behind our work — designers, developers,
+              and creators dedicated to building impactful experiences.
+            </p>
           </div>
 
           {/* Team Grid */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {loading ? (
-              <div className="col-span-full text-center py-20 text-black">Loading team...</div>
+              <div className="col-span-full text-center py-20 text-black">
+                Loading team...
+              </div>
             ) : team.length === 0 ? (
-              <div className="col-span-full text-center py-20 text-black">No team members found</div>
+              <div className="col-span-full text-center py-20 text-black">
+                No team members found
+              </div>
             ) : (
               team.map((member) => (
                 <div
@@ -123,8 +131,19 @@ export default function TeamPage() {
                       alt={member.name}
                       fill
                       className="object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
-                      onError={(e) => console.error('Team image load error:', member.imageUrl, e)}
-                      onLoad={() => console.log('Team image loaded successfully:', member.imageUrl)}
+                      onError={(e) =>
+                        console.error(
+                          "Team image load error:",
+                          member.imageUrl,
+                          e,
+                        )
+                      }
+                      onLoad={() =>
+                        console.log(
+                          "Team image loaded successfully:",
+                          member.imageUrl,
+                        )
+                      }
                     />
                   </div>
 

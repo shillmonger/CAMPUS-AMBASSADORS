@@ -43,7 +43,7 @@ export default function PastSpeakers() {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto w-full max-w-8xl px-4 lg:px-30">
-        <h2 className="mb-10 text-center text-4xl font-bold text-black md:text-4xl">
+        <h2 className="mb-10 text-center text-2xl font-bold text-black md:text-3xl">
           Past Speakers
         </h2>
 

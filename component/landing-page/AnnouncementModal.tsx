@@ -45,16 +45,16 @@ export default function AnnouncementModal() {
           onClick={() => setIsOpen(false)}
           className="absolute right-4 cursor-pointer top-4 z-20 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
         >
-          <X size={24} />
+          <X size={20} />
         </button>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center px-6 py-16 text-center lg:px-20 lg:py-20">
+        <div className="relative z-10 flex flex-col items-center px-4 py-15 text-center lg:px-20 lg:py-20">
           <h3 className="text-sm font-bold uppercase tracking-widest text-[#25D366] lg:text-base">
-            Startup Abuja in Partnership with Transnet Cloud & AWS presents.
+            CAMPUS AMBASSADORS in Partnership with Transnet Cloud & AWS presents.
           </h3>
           
-          <h1 className="mt-6 text-4xl font-black leading-tight text-white md:text-6xl lg:text-7xl">
+          <h1 className="mt-6 text-4xl font-black leading-tight text-white md:text-5xl lg:text-6xl">
             Startup Innovation <br /> 
             <span className="text-[#25D366]">Challenge 2026</span>
           </h1>
@@ -65,7 +65,7 @@ export default function AnnouncementModal() {
  
 
  <Link href="/landing-page/innovation-challenge" >
-          <button className="mt-10 cursor-pointer rounded-full bg-[#25D366] px-10 py-3 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
+          <button className="mt-10 cursor-pointer rounded-xl bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
             Learn More & Apply
           </button>
           </Link>

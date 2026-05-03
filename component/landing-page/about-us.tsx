@@ -5,53 +5,88 @@ import Image from "next/image";
 
 const aboutSections = [
   {
-    title: "Startup Abuja",
-    description: "Startup Abuja is a social enterprise and accelerator platform dedicated to empowering founders, innovators, and small businesses across Nigeria and Africa. We exist to strengthen the startup ecosystem by providing access to training, mentorship, expert guidance, ecosystem events, and investor exposure. We bridge the gap between ideas and opportunities—helping founders build, scale, and grow sustainably.",
-    image: "https://i.postimg.cc/YSJY20Pv/1.png",
-  },
-  {
-    title: "Conferences, Meetups & Ecosystem Events",
-    description: "High-powered gatherings that connect founders, investors, mentors, policymakers, and industry leaders.",
-    image: "https://i.postimg.cc/yxKR95Bt/2.jpg",
-  },
-  {
-    title: "Startup & SME Training Programs",
-    description: "Hands-on trainings covering:",
+    title: "Who We Are",
+    description: "Campus Student Ambassadors Community (CSAC) is a fast-growing network of student leaders across African campuses, focused on building powerful connections between students and brands. We are not just a digital community — we are an on-ground and online activation platform that helps companies build real visibility, engagement, and trust within the student market.",
     list: [
-      "Business model development",
-      "Pitching & fundraising",
-      "Digital transformation",
-      "Market and product development",
-      "Growth & scaling strategies",
+      "Mission: To empower students with opportunities while helping brands achieve meaningful visibility and engagement through campus-driven strategies.",
+      "Vision: To become Africa's leading campus marketing and ambassador network, driving brand growth through student-led innovation and real-world engagement.",
     ],
-    image: "https://i.postimg.cc/yxKR95Bt/2.jpg",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
   },
   {
-    title: "Mentorship & Accelerator Support",
-    description: "Guided mentorship from industry leaders to help refine your business model, validate your product, and position your startup for investor readiness.",
-    image: "https://i.postimg.cc/tRdWyXNJ/4.jpg",
-  },
-  {
-    title: "Funding Exposure",
-    description: "We connect startups to:",
+    title: "What We Do",
+    description: "At CSAC, we go beyond traditional advertising. We help brands build real experiences, not just promotions.",
     list: [
-      "Investors",
-      "Grant opportunities",
-      "Corporate partners",
-      "Government innovation programs",
+      "Build strong visibility across campuses",
+      "Execute targeted marketing campaigns", 
+      "Create engaging, student-driven content",
+      "Run ambassador-led promotions and activations",
+      "Generate authentic user experiences and feedback",
+      "Campus activation campaigns",
+      "Student ambassador programs",
+      "Product promotion and visibility",
+      "Commercial content production",
+      "Brand awareness campaigns",
+      "Community-driven engagement strategies",
     ],
-    subtext: "Startup Abuja does not directly fund startups but prepares and positions you for global and local investment pathways.",
-    image: "https://i.postimg.cc/tRdWyXNJ/4.jpg",
+    subtext: "We don't just promote brands — we create real experiences around them.",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
   },
   {
-    title: "Startup Abuja",
-    description: "Our mission is to create a vibrant ecosystem where innovation flourishes, ideas are nurtured, and startups are empowered to reach their full potential. By bringing together entrepreneurs, investors, mentors, and industry experts, we aim to catalyze innovation, fuel economic growth, and create lasting impact in Abuja and beyond.",
-    image: "https://i.postimg.cc/tRdWyXNJ/4.jpg",
+    title: "Our Unique Approach",
+    description: "We don't rely on basic advertising. Instead, we focus on authentic campus-driven strategies that deliver real results.",
+    list: [
+      "Produce real campus-based commercials and content",
+      "Drive peer-to-peer promotion through ambassadors",
+      "Focus on real-life usage, interaction, and storytelling",
+      "Real Customer Interaction - Students experience, use, and share products",
+      "Targeted Campus Reach - Precision penetration of specific campuses",
+      "Content That Converts - Commercial-style content for ads and campaigns",
+      "Peer Influence Marketing - Natural, trusted, relatable promotion",
+      "Authentic Feedback & Insights - Real reviews from target audience",
+    ],
+    subtext: "This allows brands to get: Authentic content, Relatable campaigns, Higher engagement and trust",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
   },
   {
-    title: "Research & Startup Repository",
-    description: "A growing database of Africa-based startups, ecosystem players, data insights, and research tools designed to help founders make smarter decisions.",
-    image: "https://i.postimg.cc/tRdWyXNJ/4.jpg",
+    title: "Why Campus Marketing Matters",
+    description: "Over 70% of students on campus fall within the 18–30 age range — a highly active, trend-driven, and influential demographic.",
+    list: [
+      "Students quickly adopt and promote products",
+      "Influence purchasing decisions among peers",
+      "Drive trends both online and offline",
+      "Traditional advertising is losing trust among young people",
+      "Students believe in people they relate to and real experiences",
+    ],
+    subtext: "Reaching them early means building long-term brand loyalty and market dominance.",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+  },
+  {
+    title: "Our Communities & Impact",
+    description: "We drive engagement through focused communities while building a system where everyone benefits.",
+    list: [
+      "Code Ninjas – Tech and innovation",
+      "Singles & Couples Connect – Social engagement", 
+      "Campus Ambassador Network – Leadership and promotion",
+      "Web3 Builders Hub – Future-focused digital innovation",
+      "Students gain real-world experience",
+      "Brands gain real market penetration",
+      "Communities grow stronger through collaboration",
+    ],
+    subtext: "CSAC exists to help brands connect, not just advertise.",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+  },
+  {
+    title: "Partner With Us",
+    description: "Whether you're a student ready to lead or a brand ready to grow, CSAC is your ideal growth partner.",
+    list: [
+      "Build strong visibility among students",
+      "Launch impactful campus campaigns",
+      "Create relatable and engaging content",
+      "Scale your brand through trusted networks",
+    ],
+    subtext: "We are building the future of campus-driven brand influence",
+    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
   },
 ];
 
@@ -59,7 +94,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white pt-20">
       <div className="mx-auto w-full max-w-8xl px-4 lg:px-30">
-        <h1 className="mb-10 text-center text-4xl font-bold text-black md:text-4xl">
+        <h1 className="mb-10 text-center text-2xl font-bold text-black md:text-3xl">
           About Us
         </h1>
 
@@ -83,10 +118,10 @@ export default function AboutPage() {
 
               {/* Text Content */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-2xl font-bold text-black md:text-3xl">
+                <h2 className="text-xl font-bold text-black md:text-2xl">
                   {section.title}
                 </h2>
-                <p className="mt-6 text-lg leading-relaxed text-zinc-600">
+                <p className="mt-4 text-lg leading-relaxed text-zinc-600">
                   {section.description}
                 </p>
 
