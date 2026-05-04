@@ -13,13 +13,13 @@ const WhatsAppFloatingButton = () => {
   return (
     <div className="fixed bottom-8 right-2 z-[100] flex items-center justify-center">
       {/* Pulse Animation Effect */}
-      <span className="absolute inline-flex h-10 w-10 animate-ping rounded-full bg-[#25D366] opacity-75"></span>
+      <span className="absolute inline-flex h-10 w-10 animate-ping rounded-xl bg-[#25D366] opacity-75"></span>
       
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex h-11 w-11 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition-transform hover:scale-110 active:scale-95"
+        className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white shadow-2xl transition-transform hover:scale-110 active:scale-95"
         aria-label="Contact us on WhatsApp"
       >
         <FaWhatsapp size={30} />  

@@ -30,7 +30,7 @@ const aboutSections = [
       "Community-driven engagement strategies",
     ],
     subtext: "We don't just promote brands — we create real experiences around them.",
-    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+    image: "https://i.postimg.cc/7ZTHsR8J/2.jpg",
   },
   {
     title: "Our Unique Approach",
@@ -46,7 +46,7 @@ const aboutSections = [
       "Authentic Feedback & Insights - Real reviews from target audience",
     ],
     subtext: "This allows brands to get: Authentic content, Relatable campaigns, Higher engagement and trust",
-    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+    image: "https://i.postimg.cc/tRf8S4Xc/4.jpg",
   },
   {
     title: "Why Campus Marketing Matters",
@@ -59,7 +59,7 @@ const aboutSections = [
       "Students believe in people they relate to and real experiences",
     ],
     subtext: "Reaching them early means building long-term brand loyalty and market dominance.",
-    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+    image: "https://i.postimg.cc/wB0Gh6fb/5.jpg",
   },
   {
     title: "Our Communities & Impact",
@@ -74,7 +74,7 @@ const aboutSections = [
       "Communities grow stronger through collaboration",
     ],
     subtext: "CSAC exists to help brands connect, not just advertise.",
-    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+    image: "https://i.postimg.cc/8sQK1scL/6.jpg",
   },
   {
     title: "Partner With Us",
@@ -86,7 +86,7 @@ const aboutSections = [
       "Scale your brand through trusted networks",
     ],
     subtext: "We are building the future of campus-driven brand influence",
-    image: "https://i.postimg.cc/fyTW8TDd/1.jpg",
+    image: "https://i.postimg.cc/mgws5WpS/7.jpg",
   },
 ];
 
@@ -94,7 +94,10 @@ export default function AboutPage() {
   return (
     <div className="bg-white pt-20">
       <div className="mx-auto w-full max-w-8xl px-4 lg:px-30">
-        <h1 className="mb-10 text-center text-2xl font-bold text-black md:text-3xl">
+        <h1 
+          className="mb-10 text-center text-2xl font-bold text-black md:text-3xl"
+          data-aos="fade-down"
+        >
           About Us
         </h1>
 
@@ -105,9 +108,14 @@ export default function AboutPage() {
               className={`flex flex-col items-center gap-10 md:flex-row md:gap-20 ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
               {/* Image Container */}
-              <div className="relative cursor-pointer aspect-video w-full overflow-hidden rounded-2xl border border-zinc-100 shadow-lg md:w-1/2">
+              <div 
+                className="relative cursor-pointer aspect-video w-full overflow-hidden rounded-2xl border border-zinc-100 shadow-lg md:w-1/2"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
                 <Image
                   src={section.image}
                   alt={section.title}
@@ -118,17 +126,34 @@ export default function AboutPage() {
 
               {/* Text Content */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-xl font-bold text-black md:text-2xl">
+                <h2 
+                  className="text-xl font-bold text-black md:text-2xl"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   {section.title}
                 </h2>
-                <p className="mt-4 text-lg leading-relaxed text-zinc-600">
+                <p 
+                  className="mt-4 text-lg leading-relaxed text-zinc-600"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   {section.description}
                 </p>
 
                 {section.list && (
-                  <ul className="mt-4 space-y-2">
+                  <ul 
+                    className="mt-4 space-y-2"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
                     {section.list.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-zinc-600">
+                      <li 
+                        key={i} 
+                        className="flex items-start gap-2 text-zinc-600"
+                        data-aos="fade-up"
+                        data-aos-delay={500 + i * 50}
+                      >
                         <span className="mt-1.5 text-[#25D366]">➜</span>
                         {item}
                       </li>
@@ -137,7 +162,11 @@ export default function AboutPage() {
                 )}
 
                 {section.subtext && (
-                  <p className="mt-6 text-sm italic text-zinc-500">
+                  <p 
+                    className="mt-6 text-sm italic text-zinc-500"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
                     {section.subtext}
                   </p>
                 )}

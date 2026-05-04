@@ -112,10 +112,10 @@ export default function TeamPage() {
               team.map((member) => (
                 <div
                   key={member._id}
-                  className="group flex flex-col overflow-hidden rounded-[32px] bg-white p-2 shadow-sm border border-zinc-100 transition-all duration-300 hover:shadow-xl"
+                  className="group flex flex-col overflow-hidden rounded-[32px] bg-white px-2 shadow-sm border border-zinc-100 transition-all duration-300 hover:shadow-xl"
                 >
                   {/* 1. Header Section (Top Info) */}
-                  <div className="flex flex-col items-center py-6">
+                  <div className="flex flex-col items-center py-4">
                     <h3 className="text-xl font-bold text-black tracking-tight">
                       {member.name}
                     </h3>

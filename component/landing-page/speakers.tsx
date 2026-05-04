@@ -60,7 +60,7 @@ export default function PastSpeakers() {
               className="group flex flex-col overflow-hidden rounded-[32px] bg-white p-2 shadow-sm border border-zinc-100 transition-all duration-300 hover:shadow-xl"
             >
       {/* 1. Header Section: Name & Role */}
-      <div className="flex flex-col items-center py-6 text-center">
+      <div className="flex flex-col items-center text-center">
         <h3 className="text-xl font-bold text-black tracking-tight transition-colors group-hover:text-[#25D366]">
           {speaker.name}
         </h3>

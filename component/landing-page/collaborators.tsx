@@ -50,13 +50,13 @@ export default function Collaborators() {
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 href="#"
-                className="cursor-pointer rounded-lg bg-[#25D366] px-5 py-4 text-center font-bold text-white transition-transform hover:scale-105 active:scale-95"
+                className="cursor-pointer rounded-lg bg-[#25D366] px-5 py-3 text-center font-bold text-white transition-transform hover:scale-105 active:scale-95"
               >
                 Partner With Us
               </Link>
               <Link
                 href="#"
-                className="cursor-pointer rounded-lg border-2 border-zinc-200 px-5 py-4 text-center font-bold text-black transition-all hover:border-[#25D366] hover:text-[#25D366]"
+                className="cursor-pointer rounded-lg border-2 border-zinc-200 px-5 py-3 text-center font-bold text-black transition-all hover:border-[#25D366] hover:text-[#25D366]"
               >
                 Contact Us
               </Link>
