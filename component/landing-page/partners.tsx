@@ -6,14 +6,14 @@ export default function PartnersAndVideo() {
   // Add your logo URLs here
   const partnerLogos = [
     { name: "Kokomo-Games", url: "https://i.postimg.cc/BQFDDMYm/Kokomo-Games.jpg" },
-    { name: "Young-Innovators-Nigeria", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
+    { name: "Young-Innovators", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
     { name: "Cowrywise", url: "https://i.postimg.cc/SKgzq5RL/Cowrywise.jpg" },
-    { name: "Monochrome-Travel-App", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
+    { name: "Monochrome", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
     { name: "Kegow-App", url: "https://i.postimg.cc/FF8ngFmg/Kegow-App.jpg" },
     { name: "Kokomo-Games", url: "https://i.postimg.cc/BQFDDMYm/Kokomo-Games.jpg" },
-    { name: "Young-Innovators-Nigeria", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
+    { name: "Young-Innovatorns", url: "https://i.postimg.cc/FHgLC1QL/Young-Innovators-Nigeria.jpg" },
     { name: "Cowrywise", url: "https://i.postimg.cc/SKgzq5RL/Cowrywise.jpg" },
-    { name: "Monochrome-Travel-App", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
+    { name: "Monochrome", url: "https://i.postimg.cc/bdfZ3fC6/Monochrome-Travel-App.jpg" },
     { name: "Kegow-App", url: "https://i.postimg.cc/FF8ngFmg/Kegow-App.jpg" },
   ];
 
@@ -33,15 +33,24 @@ export default function PartnersAndVideo() {
             {[...partnerLogos, ...partnerLogos].map((logo, index) => (
               <div
                 key={index}
-                className="relative h-20 w-20 flex-shrink-0 mx-6 transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="flex-shrink-0 mx-4 transition-all duration-300 hover:scale-105 cursor-pointer"
               >
-                <div className="h-full w-full rounded-xl border-2 border-gray-200 shadow-lg overflow-hidden bg-white hover:border-[#25D366] hover:shadow-2xl">
-                  <Image
-                    src={logo.url}
-                    alt={logo.name}
-                    fill
-                    className="object-contain rounded-xl"
-                  />
+                <div className="bg-white rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden hover:border-[#25D366] hover:shadow-2xl hover:shadow-[#25D366]/20 p-4 min-w-[140px] max-w-[140px]">
+                  {/* Logo Container */}
+                  <div className="relative h-16 w-16 mx-auto mb-3">
+                    <Image
+                      src={logo.url}
+                      alt={logo.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  {/* Partner Name */}
+                  <div className="text-center">
+                    <p className="text-xs font-semibold text-gray-700 line-clamp-2 leading-tight">
+                      {logo.name.replace(/-/g, ' ')}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

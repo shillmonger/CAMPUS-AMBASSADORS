@@ -54,12 +54,13 @@ export default function Header() {
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <div className="relative h-10 w-32">
+              <div className="relative h-10 w-20">
                 <Image
-                  src="/your-logo-url-here.png"
+                  src="https://i.postimg.cc/SNfnC3yf/logo.jpg"
                   alt="Logo"
                   fill
                   className="object-contain"
+                    // sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </Link>
@@ -240,7 +241,7 @@ export default function Header() {
           {/* Desktop Actions */}
           <div className="hidden items-center gap-4 lg:flex">
             <Link
-              href="/landing-page/innovation-challenge"
+              href="#"
               className="rounded-lg border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
             >
               Acceleration Program
@@ -410,7 +411,7 @@ export default function Header() {
 
           <div className="h-px bg-white/10 my-4" />
           <Link
-            href="/landing-page/innovation-challenge"
+            href="#"
             className="rounded-xl border border-white/20  text-center px-5 py-4 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
           >
             Acceleration Program

@@ -9,7 +9,7 @@ export default function Footer() {
   const quickLinks = [
     { name: "Our Team", href: "/landing-page/team" },
     { name: "Who we are", href: "/landing-page/who-we-are" },
-    { name: "Top Program", href: "/landing-page/innovation-challenge" },
+    // { name: "Top Program", href: "/landing-page/innovation-challenge" },
     { name: "Protected Route", href: "/admin-dashboard/dashboard" },
   ];
 
@@ -36,15 +36,14 @@ export default function Footer() {
           {/* About Section */}
           <div className="flex flex-col gap-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-12 w-40">
-                 {/* Replace src with your logo URL */}
-                <Image
-                  src="/your-logo-url-here.png"
-                  alt="Startup Abuja Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+             <div className="relative h-30 w-100 rounded-xl overflow-hidden">
+  <Image
+    src="https://i.postimg.cc/SNfnC3yf/logo.jpg"
+    alt="Startup Abuja Logo"
+    fill
+    className="object-contain"
+  />
+</div>
             </Link>
             <p className="text-lg leading-relaxed text-zinc-300">
               Campus Ambassador Community is the premier platform dedicated to fostering innovation, entrepreneurship, and economic growth in Africa.
